@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق مسح ضوئي للوثائق</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #canvas {
+            border: 1px solid #ccc;
+            max-width: 100%;
+        }
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>تطبيق مسح ضوئي للوثائق</h1>
+    <input type="file" id="upload" accept="image/*" class="button">
+    <button id="scan" class="button">كشف الحواف</button>
+    <button id="crop" class="button">قص الوثيقة</button>
+    <button id="save" class="button">حفظ كـ PDF</button>
+    <canvas id="canvas"></canvas>
+    <script src="jspdf.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
